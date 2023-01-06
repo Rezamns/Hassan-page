@@ -1,0 +1,276 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>H-A</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Montserrat">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <style>
+    body, h1,h2,h3,h4,h5,h6 {font-family: "Montserrat", sans-serif}
+    .w3-row-padding img {margin-bottom: 12px}
+    /* Set the width of the sidebar to 120px */
+    .w3-sidebar {width: 120px;background: #222;}
+    /* Add a left margin to the "page content" that matches the width of the sidebar (120px) */
+    #main {margin-left: 120px}
+    /* Remove margins from "page content" on small screens */
+    @media only screen and (max-width: 600px) {#main {margin-left: 0}}
+    </style>
+  </head>
+  <style>
+    @font-face {
+    font-family: IRANSans;
+    font-style: normal;
+    font-weight: bold;
+    src: url('../assets/fonts/eot/IRANSansWeb_Bold.eot');
+    src: url('../assets/fonts/eot/IRANSansWeb_Bold.eot?#iefix') format('embedded-opentype'),
+    url('../assets/fonts/woff2/IRANSansWeb_Bold.woff2') format('woff2'),
+    url('../assets/fonts/woff/IRANSansWeb_Bold.woff') format('woff'),
+    url('../assets/fonts/ttf/IRANSansWeb_Bold.ttf') format('truetype');
+}
+
+@font-face {
+    font-family: IRANSans;
+    font-style: normal;
+    font-weight: 500;
+    src: url('../assets/fonts/eot/IRANSansWeb_Medium.eot');
+    src: url('../assets/fonts/eot/IRANSansWeb_Medium.eot?#iefix') format('embedded-opentype'),
+    url('../assets/fonts/woff2/IRANSansWeb_Medium.woff2') format('woff2'),
+    url('../assets/fonts/woff/IRANSansWeb_Medium.woff') format('woff'),
+    url('../assets/fonts/ttf/IRANSansWeb_Medium.ttf') format('truetype');
+}
+
+@font-face {
+    font-family: IRANSans;
+    font-style: normal;
+    font-weight: 300;
+    src: url('../assets/fonts/eot/IRANSansWeb_Light.eot');
+    src: url('../assets/fonts/eot/IRANSansWeb_Light.eot?#iefix') format('embedded-opentype'),
+    url('../assets/fonts/woff2/IRANSansWeb_Light.woff2') format('woff2'),
+    url('../assets/fonts/woff/IRANSansWeb_Light.woff') format('woff'),
+    url('../assets/fonts/ttf/IRANSansWeb_Light.ttf') format('truetype');
+}
+
+@font-face {
+    font-family: IRANSans;
+    font-style: normal;
+    font-weight: 200;
+    src: url('../assets/fonts/eot/IRANSansWeb_UltraLight.eot');
+    src: url('../assets/fonts/eot/IRANSansWeb_UltraLight.eot?#iefix') format('embedded-opentype'),
+    url('../assets/fonts/woff2/IRANSansWeb_UltraLight.woff2') format('woff2'),
+    url('../assets/fonts/woff/IRANSansWeb_UltraLight.woff') format('woff'),
+    url('../assets/fonts/ttf/IRANSansWeb_UltraLight.ttf') format('truetype');
+}
+
+@font-face {
+    font-family: IRANSans;
+    font-style: normal;
+    font-weight: normal;
+    src: url('../assets/fonts/eot/IRANSansWeb.eot');
+    src: url('../assets/fonts/eot/IRANSansWeb.eot?#iefix') format('embedded-opentype'),
+    url('../assets/fonts/woff2/IRANSansWeb.woff2') format('woff2'),
+    url('../assets/fonts/woff/IRANSansWeb.woff') format('woff'),
+    url('../assets/fonts/ttf/IRANSansWeb.ttf') format('truetype');
+}
+
+body,h3,h2,h5,h1 {
+  font-family: 'IRANSans', Verdana, Geneva, Tahoma, sans-serif;
+}
+  </style>
+<body class="w3-black">
+
+<!-- Icon Bar (Sidebar - hidden on small screens) -->
+<nav class="w3-sidebar w3-bar-block w3-small  w3-center">
+  <!-- Avatar image in top left corner -->
+  <img src="./assets/hassan (3).png" style="width:100%">
+  <a href="#" class="w3-bar-item w3-button w3-padding-large w3-black">
+    <i class="fa fa-home w3-xxlarge"></i>
+    <p>Home</p>
+  </a>
+  <a href="#about" class="w3-bar-item w3-button w3-padding-large w3-hover-black">
+    <i class="fa fa-user w3-xxlarge"></i>
+    <p>About me</p>
+  </a>
+  <a href="#photos" class="w3-bar-item w3-button w3-padding-large w3-hover-black">
+    <i class="fa fa-eye w3-xxlarge"></i>
+    <p>Gallery</p>
+  </a>
+  <a href="#contact" class="w3-bar-item w3-button w3-padding-large w3-hover-black">
+    <i class="fa fa-envelope w3-xxlarge"></i>
+    <p>Contact me</p>
+  </a><br>
+  <img src="./assets/x.png" style="width:100%">
+</nav>
+
+<!-- Navbar on small screens (Hidden on medium and large screens) -->
+<div class="w3-top w3-hide-large w3-hide-medium" id="myNavbar">
+  <div class="w3-bar w3-black w3-opacity w3-hover-opacity-off w3-center w3-small">
+    <a href="#" class="w3-bar-item w3-button" style="width:25% !important">Home</a>
+    <a href="#about" class="w3-bar-item w3-button" style="width:25% !important">About me</a>
+    <a href="#photos" class="w3-bar-item w3-button" style="width:25% !important">Gallery</a>
+    <a href="#contact" class="w3-bar-item w3-button" style="width:25% !important">Contact</a>
+  </div>
+</div>
+
+<!-- Page Content -->
+<div dir="rtl" class="w3-padding-large" id="main">
+  <!-- Header/Home -->
+  <header class="w3-container w3-padding-32 w3-center w3-black" id="home">
+    <h1 class="w3-jumbo"><span class="w3-hide-small">حسن امیری</span></h1>
+    <h5>هنرپیشه تمام وقت تئاتر و سینما</h5>
+    <img src="./assets/x.png" alt="Cinema" class="w3-image" width="992" height="1108">
+
+  </header>
+
+  <!-- About Section -->
+  <div class="w3-content w3-justify w3-text-grey w3-padding-64" id="about">
+    <h2 class="w3-text-light-grey">درباره من</h2>
+    <hr style="width:200px" class="w3-opacity">
+    <p>اینجانب بازیگر تازه واردی بوده که با آغوش باز از تمام فرصت ها و موقعیت های شغلی در این زمینه استقبال کرده واز تمام وقت و انرژی خود برای ایفای  نقش مورد نظر به بهترین شکل استفاده خواهم کرد.اگرچه تعداد کار ها و نمایش های موجود در کارنامه من خیلی عمومی و معروف نمی باشند اما با مراجعه به همکاران و کارگردانانی که افتخار بازی در کنار آنها را داشتم میتوان از میزان کیفیت و تعهد کاری بالا در هر اجرا اطمینان لازم را حاصل نمود.
+    </p>
+    <h3 class="w3-padding-16 w3-text-light-grey">مهارت های من</h3>
+    <p class="w3-wide">سریال</p>
+    <div class="w3-white">
+      <div class="w3-dark-grey" style="height:28px;width:95%"></div>
+    </div>
+    <p class="w3-wide">سینمایی</p>
+    <div class="w3-white">
+      <div class="w3-dark-grey" style="height:28px;width:85%"></div>
+    </div>
+    <p class="w3-wide">تئاتر</p>
+    <div class="w3-white">
+      <div class="w3-dark-grey" style="height:28px;width:80%"></div>
+    </div><br>
+    
+    <h3 class="w3-padding-16 w3-text-light-grey">مشخصات شخصی</h3>
+    <div class="w3-row w3-center w3-padding-16 w3-section w3-light-grey">
+      <div class="w3-quarter w3-section">
+        <span class="w3-xlarge">79/5/12</span><br>
+        متولد
+      </div>
+      <div class="w3-quarter w3-section">
+        <span class="w3-xlarge">190cm</span><br>
+        قد
+      </div>
+      <div class="w3-quarter w3-section">
+        <span class="w3-xlarge">80kg</span><br>
+        وزن
+      </div>
+      <div class="w3-quarter w3-section">
+        <span class="w3-xlarge">مشکی</span><br>
+        رنگ مو
+      </div>
+      <div class="w3-quarter w3-section">
+        <span class="w3-xlarge">طوسی</span><br>
+        رنگ چشم
+      </div>
+      <div class="w3-quarter w3-section">
+        <span class="w3-xlarge">تهران</span><br>
+        محل تولد
+      </div>
+      <div class="w3-quarter w3-section">
+        <span class="w3-xlarge">مذکر</span><br>
+        جنسیت
+      </div>
+      <div class="w3-quarter w3-section">
+        <span class="w3-xlarge">150+</span><br>
+        Meetings
+      </div>
+    </div>
+    
+    <!-- Grid for pricing tables -->
+    <h3 class="w3-padding-16 w3-text-light-grey">شرح قرارداد</h3>
+    <div class="w3-row-padding" style="margin:0 -16px">
+      <div class="w3-half w3-margin-bottom">
+        <ul class="w3-ul w3-white w3-center w3-opacity w3-hover-opacity-off">
+          <li class="w3-dark-grey w3-xlarge w3-padding-32">فیلم سینمایی و سریال</li>
+          <li class="w3-padding-16">صدا و سیما</li>
+          <li class="w3-padding-16">سینمای خانگی</li>
+          <li class="w3-padding-16">فضای مجازی</li>
+          <li class="w3-padding-16">هالیوود</li>
+          <li class="w3-padding-16">
+            <h2>$ 0</h2>
+            <span class="w3-opacity">per month</span>
+          </li>
+          <li class="w3-light-grey w3-padding-24">
+            <button class="w3-button w3-white w3-padding-large w3-hover-black">ثبت قرار داد</button>
+          </li>
+        </ul>
+      </div>
+
+      <div class="w3-half">
+        <ul class="w3-ul w3-white w3-center w3-opacity w3-hover-opacity-off">
+          <li class="w3-dark-grey w3-xlarge w3-padding-32">اجرای زنده</li>
+          <li class="w3-padding-16">اجرای شخصی</li>
+          <li class="w3-padding-16">اجرای خانوادگی</li>
+          <li class="w3-padding-16">تئاتر</li>
+          <li class="w3-padding-16">اجرای پیوسته</li>
+          <li class="w3-padding-16">
+            <h2>$ 0</h2>
+            <span class="w3-opacity">per set</span>
+          </li>
+          <li class="w3-light-grey w3-padding-24">
+            <button class="w3-button w3-white w3-padding-large w3-hover-black">ثبت قرار داد</button>
+          </li>
+        </ul>
+      </div>
+    <!-- End Grid/Pricing tables -->
+    </div>
+  
+  
+  <!-- Portfolio Section -->
+  <div class="w3-padding-64 w3-content" id="photos">
+    <h2 class="w3-text-light-grey">گالری</h2>
+    <hr style="width:200px" class="w3-opacity">
+
+    <!-- Grid for photos -->
+    <div class="w3-row-padding" style="margin:0 -16px">
+      <div class="w3-half">
+        <img src="https://www.w3schools.com/w3images/wedding.jpg" style="width:100%">
+        <img src="https://www.w3schools.com/w3images/rocks.jpg" style="width:100%">
+        <img src="https://www.w3schools.com/w3images/sailboat.jpg" style="width:100%">
+      </div>
+
+      <div class="w3-half">
+        <img src="https://www.w3schools.com/w3images/underwater.jpg" style="width:100%">
+        <img src="https://www.w3schools.com/w3images/chef.jpg" style="width:100%">
+        <img src="https://www.w3schools.com/w3images/wedding.jpg" style="width:100%">
+        <img src="https://www.w3schools.com/w3images/p6.jpg" style="width:100%">
+      </div>
+    <!-- End photo grid -->
+    </div>
+  <!-- End Portfolio Section -->
+  </div>
+
+  <!-- Contact Section -->
+  <div class="w3-padding-64 w3-content w3-text-grey" id="contact">
+    <h2 class="w3-text-light-grey">ارتباط با من</h2>
+    <hr style="width:200px" class="w3-opacity">
+
+    <div class="w3-section">
+      <p><i class="fa fa-map-marker fa-fw w3-text-white w3-xxlarge w3-margin-right"></i>مناطق اجرا: تهران/ پردیس</p>
+      <p><i class="fa fa-phone fa-fw w3-text-white w3-xxlarge w3-margin-right"></i>تلفن همراه:574 6366 0939</p>
+      <p><i class="fa fa-envelope fa-fw w3-text-white w3-xxlarge w3-margin-right"></i>ایمیل: hassan.amiri1999@gmail.com</p>
+    </div>
+
+  <!-- End Contact Section -->
+  </div>
+  
+<!-- Footer. This section contains an ad for W3Schools Spaces. You can leave it to support us. -->
+<footer style="text-align: center;" class="w3-content w3-padding-64 w3-text-grey w3-xlarge">
+  <i class="fa fa-facebook-official w3-hover-opacity"></i>
+  <i class="fa fa-instagram w3-hover-opacity"></i>
+  <i class="fa fa-snapchat w3-hover-opacity"></i>
+  <i class="fa fa-pinterest-p w3-hover-opacity"></i>
+  <i class="fa fa-twitter w3-hover-opacity"></i>
+  <i class="fa fa-linkedin w3-hover-opacity"></i>
+ <p class="w3-small">Powered by Rj</p>
+ <!-- End footer -->
+</footer>
+
+<!-- END PAGE CONTENT -->
+</div>
+
+</body>
+</html>
