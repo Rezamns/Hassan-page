@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>H-A</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+    <link rel="icon" type="image" href="./assets/h.png">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Montserrat">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <style>
+    body, h1,h2,h3,h4,h5,h6 {font-family: "Montserrat", sans-serif}
+    .w3-row-padding img {margin-bottom: 12px}
+    /* Set the width of the sidebar to 120px */
+    .w3-sidebar {width: 100px;background: #222;}
+    /* Add a left margin to the "page content" that matches the width of the sidebar (120px) */
+    #main {margin-left: 120px}
+    /* Remove margins from "page content" on small screens */
+
+    </style>
+  </head>
+  <style>
+    @font-face {
+    font-family: IRANSans;
+    font-style: normal;
+    font-weight: bold;
+    src: url('../assets/fonts/eot/IRANSansWeb_Bold.eot');
+    src: url('../assets/fonts/eot/IRANSansWeb_Bold.eot?#iefix') format('embedded-opentype'),
+    url('../assets/fonts/woff2/IRANSansWeb_Bold.woff2') format('woff2'),
+    url('../assets/fonts/woff/IRANSansWeb_Bold.woff') format('woff'),
+    url('../assets/fonts/ttf/IRANSansWeb_Bold.ttf') format('truetype');
+}
+
+@font-face {
+    font-family: IRANSans;
+    font-style: normal;
+    font-weight: 500;
+    src: url('../assets/fonts/eot/IRANSansWeb_Medium.eot');
+    src: url('../assets/fonts/eot/IRANSansWeb_Medium.eot?#iefix') format('embedded-opentype'),
+    url('../assets/fonts/woff2/IRANSansWeb_Medium.woff2') format('woff2'),
+    url('../assets/fonts/woff/IRANSansWeb_Medium.woff') format('woff'),
+    url('../assets/fonts/ttf/IRANSansWeb_Medium.ttf') format('truetype');
+}
+
+@font-face {
+    font-family: IRANSans;
+    font-style: normal;
+    font-weight: 300;
+    src: url('../assets/fonts/eot/IRANSansWeb_Light.eot');
+    src: url('../assets/fonts/eot/IRANSansWeb_Light.eot?#iefix') format('embedded-opentype'),
+    url('../assets/fonts/woff2/IRANSansWeb_Light.woff2') format('woff2'),
+    url('../assets/fonts/woff/IRANSansWeb_Light.woff') format('woff'),
+    url('../assets/fonts/ttf/IRANSansWeb_Light.ttf') format('truetype');
+}
+
+@font-face {
+    font-family: IRANSans;
+    font-style: normal;
+    font-weight: 200;
+    src: url('../assets/fonts/eot/IRANSansWeb_UltraLight.eot');
+    src: url('../assets/fonts/eot/IRANSansWeb_UltraLight.eot?#iefix') format('embedded-opentype'),
+    url('../assets/fonts/woff2/IRANSansWeb_UltraLight.woff2') format('woff2'),
+    url('../assets/fonts/woff/IRANSansWeb_UltraLight.woff') format('woff'),
+    url('../assets/fonts/ttf/IRANSansWeb_UltraLight.ttf') format('truetype');
+}
+
+@font-face {
+    font-family: IRANSans;
+    font-style: normal;
+    font-weight: normal;
+    src: url('../assets/fonts/eot/IRANSansWeb.eot');
+    src: url('../assets/fonts/eot/IRANSansWeb.eot?#iefix') format('embedded-opentype'),
+    url('../assets/fonts/woff2/IRANSansWeb.woff2') format('woff2'),
+    url('../assets/fonts/woff/IRANSansWeb.woff') format('woff'),
+    url('../assets/fonts/ttf/IRANSansWeb.ttf') format('truetype');
+}
+
+body,h3,h2,h5,h1 {
+  font-family: 'IRANSans', Verdana, Geneva, Tahoma, sans-serif;
+}
+  </style>
+<body class="w3-black">
+
+<!-- Icon Bar (Sidebar - hidden on small screens) -->
+<nav class="w3-sidebar w3-bar-block w3-small  w3-center">
+  <!-- Avatar image in top left corner -->
+  <img src="./assets/hassan (3).png" style="width:100%">
+  <a href="#" class="w3-bar-item w3-button w3-padding-large w3-hover-black">
+    <i class="fa fa-home w3-xxlarge"></i>
+    <p>Home</p>
+  </a>
+  <a href="#about" class="w3-bar-item w3-button w3-padding-large w3-hover-black">
+    <i class="fa fa-user w3-xxlarge"></i>
+    <p>About me</p>
+  </a>
+  <a href="#photos" class="w3-bar-item w3-button w3-padding-large w3-hover-black">
+    <i class="fa fa-eye w3-xxlarge"></i>
+    <p>Gallery</p>
+  </a>
+  <a href="#contact" class="w3-bar-item w3-button w3-padding-large w3-hover-black">
+    <i class="fa fa-envelope w3-xxlarge"></i>
+    <p>Contact me</p>
+  </a><br>
+  <!-- <img src="./assets/xx.png" style="width:100%"> -->
+</nav>
+
+<!-- Page Content -->
+<div dir="rtl" class="w3-padding-large" id="main">
+
+  <!-- About Section -->
+  <div class="w3-content w3-justify w3-text-grey w3-padding-64" id="about">
+
+
+    
+    <!-- Grid for pricing tables -->
+    <h3 class="w3-padding-16 w3-text-light-grey">نوع قرارداد را انتخاب کنید...</h3>
+    <div class="w3-row-padding" style="margin:0 -16px">
+      <div class="w3-half w3-margin-bottom">
+        <ul class="w3-ul w3-white w3-center w3-opacity w3-hover-opacity-off">
+          <li class="w3-dark-grey w3-xlarge w3-padding-32">فیلم سینمایی و سریال</li>
+          <li class="w3-padding-16">صدا و سیما</li>
+          <li class="w3-padding-16">سینمای خانگی</li>
+          <li class="w3-padding-16">بالیوود</li>
+          <li class="w3-padding-16">هالیوود</li>
+          <li class="w3-padding-16">
+            <h2>$ 1400</h2>
+            <span class="w3-opacity">per month</span>
+          </li>
+          <li class="w3-light-grey w3-padding-24">
+            <label class="container">نوع دوم
+              <input type="checkbox">
+              <span class="checkmark"></span>
+            </label>
+          </li>
+        </ul>
+      </div>
+
+      <div class="w3-half">
+        <ul class="w3-ul w3-white w3-center w3-opacity w3-hover-opacity-off">
+          <li class="w3-dark-grey w3-xlarge w3-padding-32">اجرای زنده</li>
+          <li class="w3-padding-16">اجرای شخصی</li>
+          <li class="w3-padding-16">اجرای خانوادگی</li>
+          <li class="w3-padding-16">تئاتر</li>
+          <li class="w3-padding-16">اجرای پیوسته</li>
+          <li class="w3-padding-16">
+            <h2>$ 800</h2>
+            <span class="w3-opacity">per set</span>
+          </li>
+          <li class="w3-light-grey w3-padding-24">
+            <label class="container">نوع اول
+              <input type="checkbox">
+              <span class="checkmark"></span>
+            </label>
+          </li>
+        </ul>
+      </div>
+    <!-- End Grid/Pricing tables -->
+    </div>
+
+  
+
+<!-- END PAGE CONTENT -->
+</div>
+
+</body>
+</html>
